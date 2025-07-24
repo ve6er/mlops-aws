@@ -1,0 +1,102 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python src/data_ingestion.py
+    deps:
+    - path: src/data_ingestion.py
+      hash: md5
+      md5: af66843ef50d79515c1ea285ab282894
+      size: 3652
+      isexec: true
+    params:
+      params.yaml:
+        data_ingestion.test_size: 0.05
+    outs:
+    - path: data/raw
+      hash: md5
+      md5: 4ea568625e134aaf49b387fb4b3629fa.dir
+      size: 479272
+      nfiles: 2
+  data_preprocessing:
+    cmd: python src/data_preprocessing.py
+    deps:
+    - path: data/raw
+      hash: md5
+      md5: 4ea568625e134aaf49b387fb4b3629fa.dir
+      size: 479272
+      nfiles: 2
+    - path: src/data_preprocessing.py
+      hash: md5
+      md5: 6a940f82f0d893231d86c3f7ac064410
+      size: 3879
+      isexec: true
+    outs:
+    - path: data/interim
+      hash: md5
+      md5: 55e8aa84c32a8811b7f43ee7116cf28b.dir
+      size: 266692
+      nfiles: 2
+  feature_engineering:
+    cmd: python src/feature_engineering.py
+    deps:
+    - path: data/interim
+      hash: md5
+      md5: 55e8aa84c32a8811b7f43ee7116cf28b.dir
+      size: 266692
+      nfiles: 2
+    - path: src/feature_engineering.py
+      hash: md5
+      md5: 01994e8d9ffc4b365edbfc6fbdc26ad4
+      size: 3797
+      isexec: true
+    params:
+      params.yaml:
+        feature_engineering.max_features: 70
+    outs:
+    - path: data/processed
+      hash: md5
+      md5: 33b4c928ffce391bb3a7974cd6919ec4.dir
+      size: 1600946
+      nfiles: 2
+  model_building:
+    cmd: python src/model_building.py
+    deps:
+    - path: data/processed
+      hash: md5
+      md5: 33b4c928ffce391bb3a7974cd6919ec4.dir
+      size: 1600946
+      nfiles: 2
+    - path: src/model_building.py
+      hash: md5
+      md5: 77c025cb068578132c19a747b222ee47
+      size: 3767
+      isexec: true
+    params:
+      params.yaml:
+        model_building.n_estimators: 60
+        model_building.random_state: 5
+    outs:
+    - path: model/model.pkl
+      hash: md5
+      md5: 2f7954d117f65c0af0e3e6b8d64c5569
+      size: 3092214
+      isexec: true
+  model_evaluation:
+    cmd: python src/model_evaluation.py
+    deps:
+    - path: model/model.pkl
+      hash: md5
+      md5: 2f7954d117f65c0af0e3e6b8d64c5569
+      size: 3092214
+      isexec: true
+    - path: src/model_evaluation.py
+      hash: md5
+      md5: 4a389fbdb8262a152c515878c897e30f
+      size: 4560
+      isexec: true
+    outs:
+    - path: reports/metrics.json
+      hash: md5
+      md5: ebcd91f70897c40dc1ca37842838730c
+      size: 113
+      isexec: true
