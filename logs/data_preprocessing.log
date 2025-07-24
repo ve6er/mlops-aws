@@ -1,0 +1,61 @@
+2025-07-24 08:04:50,768 - data_preprocessing - DEBUG - Data Loaded Properly.
+2025-07-24 08:04:50,769 - data_preprocessing - DEBUG - Starting preprocessing for DataFrame
+2025-07-24 08:04:50,772 - data_preprocessing - DEBUG - Target Column Encoded.
+2025-07-24 08:04:50,779 - data_preprocessing - DEBUG - Duplicate Removed
+2025-07-24 08:04:50,780 - data_preprocessing - ERROR - Error during text preprocessing: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/home/veer/nltk_data'
+    - '/home/veer/anaconda3/envs/mlops/nltk_data'
+    - '/home/veer/anaconda3/envs/mlops/share/nltk_data'
+    - '/home/veer/anaconda3/envs/mlops/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-07-24 08:04:50,780 - data_preprocessing - ERROR - Failed to complete preprocesing: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/home/veer/nltk_data'
+    - '/home/veer/anaconda3/envs/mlops/nltk_data'
+    - '/home/veer/anaconda3/envs/mlops/share/nltk_data'
+    - '/home/veer/anaconda3/envs/mlops/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-07-24 08:05:46,152 - data_preprocessing - DEBUG - Data Loaded Properly.
+2025-07-24 08:05:46,152 - data_preprocessing - DEBUG - Starting preprocessing for DataFrame
+2025-07-24 08:05:46,153 - data_preprocessing - DEBUG - Target Column Encoded.
+2025-07-24 08:05:46,156 - data_preprocessing - DEBUG - Duplicate Removed
+2025-07-24 08:05:51,224 - data_preprocessing - DEBUG - Text Column Transformed.
+2025-07-24 08:05:51,225 - data_preprocessing - DEBUG - Starting preprocessing for DataFrame
+2025-07-24 08:05:51,226 - data_preprocessing - DEBUG - Target Column Encoded.
+2025-07-24 08:05:51,227 - data_preprocessing - DEBUG - Duplicate Removed
+2025-07-24 08:05:51,411 - data_preprocessing - DEBUG - Text Column Transformed.
+2025-07-24 08:05:51,412 - data_preprocessing - DEBUG - Data Transformed Correctly
+2025-07-24 08:05:51,447 - data_preprocessing - DEBUG - Processed Data is Saved: ./data/interim

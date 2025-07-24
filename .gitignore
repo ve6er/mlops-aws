@@ -1,0 +1,6 @@
+data
+data/raw
+data/interim
+data/processed
+model
+reports
