@@ -1,0 +1,14 @@
+artifact_uri: file:///mnt/c/Users/Lenovo/Desktop/MLOPS%20Lab/Lecture%203/mlops_dvc_aws/mlruns/0/532d38a8416a4fd3900b088517069895/artifacts
+end_time: 1754552767509
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 532d38a8416a4fd3900b088517069895
+run_name: train
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754552761445
+status: 3
+tags: []
+user_id: veer

@@ -1,0 +1,6 @@
+artifact_location: file:///mnt/c/Users/Lenovo/Desktop/MLOPS Lab/Lecture 3/mlops_dvc_aws/mlruns/267300272181081645
+creation_time: 1754552767618
+experiment_id: '267300272181081645'
+last_update_time: 1754552767618
+lifecycle_stage: active
+name: Spam-Classifier-Pipeline

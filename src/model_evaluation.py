@@ -9,6 +9,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, roc_a
 import logging
 import yaml
 from dvclive import Live
+import mlflow
 
 #Logs directory
 log_dir = "logs"
@@ -111,20 +112,24 @@ def save_metrics(metrics: dict, file_path: str) -> None:
         with open(file_path,'w') as file:
             json.dump(metrics, file, indent=4)
         logger.debug('Metrics save to %s', file_path)
-    except Eception as e:
+    except Exception as e:
         logger.error('Unexpected error occured %s',e)
         raise
 
 def main():
+    mlflow.set_tracking_uri(f"file://{os.path.abspath('mlruns')}")
+    mlflow.set_experiment("Spam-Classifier-Pipeline")
     try:
-        params = load_params(params_path='params.yaml')
-        clf = load_model('./model/model.pkl')
-        test_data = load_data('./data/processed/test_tfidf.csv')
-        
-        X_test = test_data.iloc[:,:-1].values
-        y_test = test_data.iloc[:,-1].values
-        
-        metrics = evaluate_model(clf, X_test, y_test)
+        with mlflow.start_run(run_name='train'):
+            params = load_params(params_path='params.yaml')
+            clf = load_model('./model/model.pkl')
+            test_data = load_data('./data/processed/test_tfidf.csv')
+            
+            X_test = test_data.iloc[:,:-1].values
+            y_test = test_data.iloc[:,-1].values
+            
+            metrics = evaluate_model(clf, X_test, y_test)
+            mlflow.sklearn.log_model(clf, f"{mlflow.active_run().info.run_id}")
             
             
             
@@ -136,6 +141,8 @@ def main():
             live.log_params(params)
               
         save_metrics(metrics,'reports/metrics.json')
+        mlflow.log_metrics(metrics)
+        mlflow.log_artifact('reports/metrics.json')
     except Exception as e:
         logger.error('Unexpected error : %s',e)
         print('Error{e}')

@@ -1,0 +1,232 @@
+    1  ls
+    2  cd Desktop
+    3  cd ..
+    4  cd Users/Lenovo/Desktop
+    5  mkdir "MLOPS Lab"
+    6  cd "MLOPS Lab"
+    7  wget -c https://repo.anaconda.com/archive/Anaconda3-2025.06-0-Linux-x86_64.sh
+    8  ls
+    9  sh Anaconda3-2025.06-0-Linux-x86_64.sh
+   10  eval "$(/home/veer/anaconda3/bin/conda shell.YOUR_SHELL_NAME hook)"
+   11  eval "$(/home/veer/anaconda3/bin/conda shell.bash hook)"
+   12  conda init
+   13  ls
+   14  cd anaconda3
+   15  ls
+   16  cd shell
+   17  ls
+   18  cd ..
+   19  ls
+   20  cd veer
+   21  ls
+   22  cd ..
+   23  cd
+   24  ls
+   25  cd anaconda3
+   26  ls
+   27  cd bin
+   28  ls
+   29  cd ..
+   30  exit
+   31  cd "Desktop/MLOPS Lab"
+   32  conda init
+   33  mkdir MLOPS_git
+   34  cd MLOPS_git/
+   35  conda create -n mlops
+   36  conda activate mlops
+   37  git
+   38  git --v
+   39  git -v
+   40  conda -update git
+   41  git -update
+   42  ls
+   43  cd ..
+   44  rm -rf Anaconda3-2025.06-0-Linux-x86_64.sh 
+   45  ls
+   46  cd MLOPS_git/
+   47  nano training.py
+   48  ls
+   49  cat training.py
+   50  git init
+   51  git status
+   52  git add training.py
+   53  git status
+   54  git rm --cached training.py
+   55  git status
+   56  git add training.py
+   57  git commit -m "Added training file"
+   58  git config --global user.email "veerkukreja.vk@gmail.com"
+   59  git config --global "ve6er"
+   60  git config --global user.name "ve6er"
+   61  git commit -m "Added training file"
+   62  git log
+   63  git checkout -b intern
+   64  git status
+   65  nano testing.py
+   66  git status
+   67  git add testing.py
+   68  git status
+   69  git commit -m "Added testing"
+   70  cat testing.py
+   71  git checkout master
+   72  ls
+   73  git merge intern master
+   74  ls
+   75  nano testing.py
+   76  git status
+   77  git add .
+   78  git commit -m "Modified testing.py"
+   79  git checkout intern
+   80  cat testing.py
+   81  git merge master intern
+   82  cat testing.py 
+   83  log --graph
+   84  git log --graph
+   85  lsvirtualenv
+   86  find ~ -type d -name "bin" -path "*/venv/bin"
+   87  conda activate intern
+   88  conda info --envs
+   89  conda activate mlops
+   90  ls
+   91  cd mlops
+   92  cd Desktop
+   93  ls
+   94  cd mlops
+   95  cd "MLOPS Lab"
+   96  nano create_csv.py
+   97  ls
+   98  mkdir newGit
+   99  mv create_csv.py newGit
+  100  cd newGit
+  101  ls
+  102  git init
+  103  git status
+  104  git add .
+  105  git commit -m "Initial add"
+  106  pip install dvc
+  107  conda install pip
+  108  pip install dvc
+  109  dvc init
+  110  git status
+  111  git add .
+  112  git commit -m "initialized dvc"
+  113  cat create_csv.py 
+  114  nano create_csv.py 
+  115  cat create_csv.py 
+  116  nano create_csv.py 
+  117  git add .
+  118  cit commit -m "fixed cod"
+  119  git commit -m "fixed cod"
+  120  python create_csv.py 
+  121  pip install pandas 
+  122  python create_csv.py 
+  123  ls
+  124  dvc add data
+  125  git add .gitignore data.dvc
+  126  cat data.dvc
+  127  dvc commit
+  128  git commit -m "data version 1"
+  129  dvc remote add myremote "C:\Users\Lenovo\Desktop\S3"
+  130  dvc remote list
+  131  dvc push
+  132  dvc remote default myremote
+  133  dvc push
+  134  dvc status
+  135  nano data/sample.csv
+  136  nano create_csv.py 
+  137  python create_csv.py
+  138  git status
+  139  cat data/sample.csv
+  140  git add .
+  141  git add dvc/config
+  142  git add dvc
+  143  git add data.dvc
+  144  dvc status
+  145  dvc commit
+  146  git commit data.dvc
+  147  git add data.dvc
+  148  git commit -m "data version 2"
+  149  dvc commit
+  150  dvc status
+  151  rm -rf data
+  152  ls
+  153  dvc pull
+  154  cat data/sample.csv
+  155  git log -oneline
+  156  git log 
+  157  git log oneline
+  158  git log --oneline
+  159  git checkout 7742fa9
+  160  cat data/sample.csv
+  161  dvc checkout
+  162  cat data/sample.csv
+  163  history >> yoyo.txt
+  164  ls
+  165  mv yoyo.txt "C:\Users\Lenovo\Desktop\"
+  166  conda activate mlops
+  167  cat parents.yaml
+  168  cd "Desktop/MLOps Lab/Lecture 3"
+  169  cat params.yaml
+  170  ls
+  171  cd mlops_dvc_aws/
+  172  cat params.yaml
+  173  cat dvc.yaml
+  174  pip install pandas
+  175  pip install scikit-learn yaml
+  176  pip install scikit-learn
+  177  pip install PyYAML
+  178  cat src/data_ingestion.py
+  179  python src/data_ingestion.py
+  180  ls
+  181  cd data
+  182  ls
+  183  cd ..
+  184  ls
+  185  cat params.yaml
+  186  nano src/data_processing.py
+  187  ls
+  188  cd src
+  189  ls
+  190  nano data_preprocessing.py
+  191  pip install nltk
+  192  python data_preprocessing.py
+  193  cd ..
+  194  python src/data_preprocessing.py
+  195  nano src/data_preprocessing.py
+  196  python src/data_preprocessing.py
+  197  python src/feature_engineering.py
+  198  python src/model_building.py
+  199  pip install dvclive
+  200  cd src
+  201  ls
+  202  cd ..
+  203  python model_evaluation.py
+  204  python src/model_evaluation.py
+  205  git init
+  206  dvc init
+  207  nano .gitignore
+  208  cat .gitignore
+  209  git add .
+  210  git stage --restore
+  211  git restore --staged
+  212  git restore --staged .
+  213  git add .
+  214  git status
+  215  git commit -m "Initial commit"
+  216  dvc repro
+  217  cat dvc.lock
+  218  git add dvc.lock
+  219  git commit -m "Added dvc.lock"
+  220  dvc run --help
+  221  dvc dag
+  222  dvc exp run --queue  -S data_ingestion.test_size=0.2
+  223  dvc exp run --queue  -S data_ingestion.test_size=0.2 -S model_building.n_estimators=1000
+  224  dvc exp run --run-all --jobs=2
+  225  dvc exp show
+  226  dvc exp apply loral-bond
+  227  dvc exp apply perky-kerf
+  228  git status
+  229  git add .
+  230  pip install aws-cli
+  231  pip install awscli
+  232  history >> lect3_commands.txt

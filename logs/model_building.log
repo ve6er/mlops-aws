@@ -4,3 +4,21 @@
 2025-07-24 08:06:13,775 - model_building - DEBUG - Model training starred with 4922 samples
 2025-07-24 08:06:14,057 - model_building - DEBUG - Training Completed
 2025-07-24 08:06:14,086 - model_building - DEBUG - Model saved to model/model.pkl
+2025-07-24 08:17:12,922 - model_building - DEBUG - Parameters retrieved from <_io.TextIOWrapper name='params.yaml' mode='r' encoding='UTF-8'>
+2025-07-24 08:17:12,967 - model_building - DEBUG - Data loaded from ./data/processed/train_tfidf.csv
+2025-07-24 08:17:12,970 - model_building - DEBUG - Intializing RF Model params from {'n_estimators': 60, 'random_state': 5}
+2025-07-24 08:17:12,971 - model_building - DEBUG - Model training starred with 4922 samples
+2025-07-24 08:17:13,417 - model_building - DEBUG - Training Completed
+2025-07-24 08:17:13,445 - model_building - DEBUG - Model saved to model/model.pkl
+2025-07-24 08:26:35,750 - model_building - DEBUG - Parameters retrieved from <_io.TextIOWrapper name='params.yaml' mode='r' encoding='UTF-8'>
+2025-07-24 08:26:35,790 - model_building - DEBUG - Data loaded from ./data/processed/train_tfidf.csv
+2025-07-24 08:26:35,792 - model_building - DEBUG - Intializing RF Model params from {'n_estimators': 60, 'random_state': 5}
+2025-07-24 08:26:35,793 - model_building - DEBUG - Model training starred with 4152 samples
+2025-07-24 08:26:36,060 - model_building - DEBUG - Training Completed
+2025-07-24 08:26:36,088 - model_building - DEBUG - Model saved to model/model.pkl
+2025-08-07 07:46:01,879 - model_building - DEBUG - Parameters retrieved from <_io.TextIOWrapper name='params.yaml' mode='r' encoding='UTF-8'>
+2025-08-07 07:46:01,933 - model_building - DEBUG - Data loaded from ./data/processed/train_tfidf.csv
+2025-08-07 07:46:01,938 - model_building - DEBUG - Intializing RF Model params from {'n_estimators': 60, 'random_state': 5}
+2025-08-07 07:46:01,938 - model_building - DEBUG - Model training starred with 4152 samples
+2025-08-07 07:46:02,249 - model_building - DEBUG - Training Completed
+2025-08-07 07:46:02,295 - model_building - DEBUG - Model saved to model/model.pkl

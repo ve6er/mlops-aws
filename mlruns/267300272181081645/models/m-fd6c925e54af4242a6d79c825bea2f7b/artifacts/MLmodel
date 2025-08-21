@@ -1,0 +1,22 @@
+artifact_path: file:///mnt/c/Users/Lenovo/Desktop/MLOPS Lab/Lecture 3/mlops_dvc_aws/mlruns/267300272181081645/models/m-fd6c925e54af4242a6d79c825bea2f7b/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.5
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.1
+mlflow_version: 3.2.0
+model_id: m-fd6c925e54af4242a6d79c825bea2f7b
+model_size_bytes: 2699314
+model_uuid: m-fd6c925e54af4242a6d79c825bea2f7b
+prompts: null
+run_id: 0963ad4309334a2293171008277ca414
+utc_time_created: '2025-08-07 07:51:59.477727'

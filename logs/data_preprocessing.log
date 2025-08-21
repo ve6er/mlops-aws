@@ -59,3 +59,25 @@
 2025-07-24 08:05:51,411 - data_preprocessing - DEBUG - Text Column Transformed.
 2025-07-24 08:05:51,412 - data_preprocessing - DEBUG - Data Transformed Correctly
 2025-07-24 08:05:51,447 - data_preprocessing - DEBUG - Processed Data is Saved: ./data/interim
+2025-07-24 08:17:03,271 - data_preprocessing - DEBUG - Data Loaded Properly.
+2025-07-24 08:17:03,271 - data_preprocessing - DEBUG - Starting preprocessing for DataFrame
+2025-07-24 08:17:03,273 - data_preprocessing - DEBUG - Target Column Encoded.
+2025-07-24 08:17:03,277 - data_preprocessing - DEBUG - Duplicate Removed
+2025-07-24 08:17:08,694 - data_preprocessing - DEBUG - Text Column Transformed.
+2025-07-24 08:17:08,695 - data_preprocessing - DEBUG - Starting preprocessing for DataFrame
+2025-07-24 08:17:08,695 - data_preprocessing - DEBUG - Target Column Encoded.
+2025-07-24 08:17:08,696 - data_preprocessing - DEBUG - Duplicate Removed
+2025-07-24 08:17:08,895 - data_preprocessing - DEBUG - Text Column Transformed.
+2025-07-24 08:17:08,895 - data_preprocessing - DEBUG - Data Transformed Correctly
+2025-07-24 08:17:08,917 - data_preprocessing - DEBUG - Processed Data is Saved: ./data/interim
+2025-07-24 08:26:24,142 - data_preprocessing - DEBUG - Data Loaded Properly.
+2025-07-24 08:26:24,142 - data_preprocessing - DEBUG - Starting preprocessing for DataFrame
+2025-07-24 08:26:24,144 - data_preprocessing - DEBUG - Target Column Encoded.
+2025-07-24 08:26:24,148 - data_preprocessing - DEBUG - Duplicate Removed
+2025-07-24 08:26:29,788 - data_preprocessing - DEBUG - Text Column Transformed.
+2025-07-24 08:26:29,789 - data_preprocessing - DEBUG - Starting preprocessing for DataFrame
+2025-07-24 08:26:29,790 - data_preprocessing - DEBUG - Target Column Encoded.
+2025-07-24 08:26:29,791 - data_preprocessing - DEBUG - Duplicate Removed
+2025-07-24 08:26:30,750 - data_preprocessing - DEBUG - Text Column Transformed.
+2025-07-24 08:26:30,750 - data_preprocessing - DEBUG - Data Transformed Correctly
+2025-07-24 08:26:30,771 - data_preprocessing - DEBUG - Processed Data is Saved: ./data/interim

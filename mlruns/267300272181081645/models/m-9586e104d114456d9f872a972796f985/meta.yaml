@@ -1,0 +1,10 @@
+artifact_location: file:///mnt/c/Users/Lenovo/Desktop/MLOPS Lab/Lecture 3/mlops_dvc_aws/mlruns/267300272181081645/models/m-9586e104d114456d9f872a972796f985/artifacts
+creation_timestamp: 1754553146395
+experiment_id: '267300272181081645'
+last_updated_timestamp: 1754553150379
+model_id: m-9586e104d114456d9f872a972796f985
+model_type: null
+name: c1cb33209ae74427bc0875a0f46dade5
+source_run_id: c1cb33209ae74427bc0875a0f46dade5
+status: 2
+status_message: null

@@ -3,3 +3,29 @@
 2025-07-24 08:11:14,993 - model_evaluation - DEBUG - Test Data Loaded from ./data/processed/test_tfidf.csv
 2025-07-24 08:11:15,009 - model_evaluation - DEBUG - Model Evaluation are accuracy: 0.963899 , precision : 0.875000, recall : 0.750000, auc: 0.868976
 2025-07-24 08:11:15,486 - model_evaluation - DEBUG - Metrics save to reports/metrics.json
+2025-07-24 08:17:16,902 - model_evaluation - DEBUG - Parameters retrieved from params.yaml
+2025-07-24 08:17:17,017 - model_evaluation - DEBUG - Model loaded from ./model/model.pkl
+2025-07-24 08:17:17,025 - model_evaluation - DEBUG - Test Data Loaded from ./data/processed/test_tfidf.csv
+2025-07-24 08:17:17,046 - model_evaluation - DEBUG - Model Evaluation are accuracy: 0.963899 , precision : 0.875000, recall : 0.750000, auc: 0.868976
+2025-07-24 08:17:17,550 - model_evaluation - DEBUG - Metrics save to reports/metrics.json
+2025-07-24 08:26:38,176 - model_evaluation - DEBUG - Parameters retrieved from params.yaml
+2025-07-24 08:26:38,305 - model_evaluation - DEBUG - Model loaded from ./model/model.pkl
+2025-07-24 08:26:38,325 - model_evaluation - DEBUG - Test Data Loaded from ./data/processed/test_tfidf.csv
+2025-07-24 08:26:38,356 - model_evaluation - DEBUG - Model Evaluation are accuracy: 0.950045 , precision : 0.891473, recall : 0.737179, auc: 0.861182
+2025-07-24 08:26:39,219 - model_evaluation - DEBUG - Metrics save to reports/metrics.json
+2025-08-07 07:46:11,357 - model_evaluation - DEBUG - Parameters retrieved from params.yaml
+2025-08-07 07:46:11,491 - model_evaluation - DEBUG - Model loaded from ./model/model.pkl
+2025-08-07 07:46:11,512 - model_evaluation - DEBUG - Test Data Loaded from ./data/processed/test_tfidf.csv
+2025-08-07 07:46:11,557 - model_evaluation - DEBUG - Model Evaluation are accuracy: 0.950045 , precision : 0.891473, recall : 0.737179, auc: 0.861182
+2025-08-07 07:46:14,606 - model_evaluation - DEBUG - Metrics save to reports/metrics.json
+2025-08-07 07:51:58,417 - model_evaluation - DEBUG - Parameters retrieved from params.yaml
+2025-08-07 07:51:58,698 - model_evaluation - DEBUG - Model loaded from ./model/model.pkl
+2025-08-07 07:51:58,728 - model_evaluation - DEBUG - Test Data Loaded from ./data/processed/test_tfidf.csv
+2025-08-07 07:51:58,766 - model_evaluation - DEBUG - Model Evaluation are accuracy: 0.950045 , precision : 0.891473, recall : 0.737179, auc: 0.861182
+2025-08-07 07:52:04,969 - model_evaluation - DEBUG - Metrics save to reports/metrics.json
+2025-08-07 07:52:04,970 - model_evaluation - ERROR - Unexpected error : log_metric() missing 1 required positional argument: 'value'
+2025-08-07 07:52:25,996 - model_evaluation - DEBUG - Parameters retrieved from params.yaml
+2025-08-07 07:52:26,165 - model_evaluation - DEBUG - Model loaded from ./model/model.pkl
+2025-08-07 07:52:26,188 - model_evaluation - DEBUG - Test Data Loaded from ./data/processed/test_tfidf.csv
+2025-08-07 07:52:26,217 - model_evaluation - DEBUG - Model Evaluation are accuracy: 0.950045 , precision : 0.891473, recall : 0.737179, auc: 0.861182
+2025-08-07 07:52:32,167 - model_evaluation - DEBUG - Metrics save to reports/metrics.json

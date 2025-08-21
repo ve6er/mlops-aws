@@ -7,6 +7,7 @@ import pickle
 import logging
 from sklearn.ensemble import RandomForestClassifier
 import yaml
+import mlflow
 
 #Logs directory
 
@@ -102,21 +103,27 @@ def save_model(model, file_path: str) -> None:
 
 #Main
 def main():
-    try:
-        params = load_params('params.yaml')['model_building']
-        train_data = load_csv('./data/processed/train_tfidf.csv')
-        X_train = train_data.iloc[:,:-1].values
-        y_train = train_data.iloc[:,-1].values
-        
-        clf = train_model(X_train, y_train, params)
-        
-        model_save_path = 'model/model.pkl'
-        save_model(clf, model_save_path)
-    
-    except Exception as e:
+	mlflow.set_tracking_uri(f"file://{os.path.abspath('mlruns')}")
+	mlflow.set_experiment("Spam-Classifier-Pipeline")
+     
+try:
+        with mlflow.start_run(run_name='train'):
+            params = load_params('params.yaml')['model_building']
+            train_data = load_csv('./data/processed/train_tfidf.csv')
+            X_train = train_data.iloc[:,:-1].values
+            y_train = train_data.iloc[:,-1].values
+
+            clf = train_model(X_train, y_train, params)
+
+            model_save_path = 'model/model.pkl'
+            save_model(clf, model_save_path)
+            mlflow.sklearn.log_model(clf, f"{mlflow.active_run().info.run_id}")
+
+except Exception as e:
         logger.error('Failed to build model %s',e)
         print(f'Error{e}')
         
+
 
 if __name__ == "__main__":
     main()

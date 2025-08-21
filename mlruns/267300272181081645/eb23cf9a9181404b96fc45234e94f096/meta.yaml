@@ -1,0 +1,14 @@
+artifact_uri: file:///mnt/c/Users/Lenovo/Desktop/MLOPS Lab/Lecture 3/mlops_dvc_aws/mlruns/267300272181081645/eb23cf9a9181404b96fc45234e94f096/artifacts
+end_time: 1754553153156
+entry_point_name: ''
+experiment_id: '267300272181081645'
+lifecycle_stage: active
+run_id: eb23cf9a9181404b96fc45234e94f096
+run_name: placid-grub-7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754553152184
+status: 3
+tags: []
+user_id: veer
